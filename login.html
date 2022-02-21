@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>todo list</title>
+</head>
+
+<body>
+  <style>
+    body {
+      background-image: url("photos/image\ 2.jpg");
+      background-color: #cccccc;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  </style>
+
+
+  <form name="login">
+    <b>Username</b><input type="text" name="userid" /><br><br>
+    <b>Password</b><input type="password" name="pswrd" /><br><br>
+    <input type="button" onclick="check(this.form)" value="Login" />
+    <input type="reset" value="Cancel" />
+  </form>
+
+  <script>
+    function check(form) {
+      if (form.userid.value == "admin" && form.pswrd.value == "12345") {
+        window.open('dolist.html')
+      }
+      else {
+        alert("Error Password or Username")
+      }
+    }
+
+  </script>
+</body>
+
+</html>
